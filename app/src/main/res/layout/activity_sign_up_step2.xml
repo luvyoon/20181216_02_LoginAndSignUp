@@ -8,6 +8,67 @@
     tools:context=".SignUpStep2Activity">
 
 
+    <LinearLayout
+        android:padding="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User ID"    />
+        <EditText
+
+            android:id="@+id/emailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:hint="이메일 형식으로 입력해주세요"
+            />
+
+        <TextView
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Password"
+            />
+        <EditText
+            android:id="@+id/pwEdt"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="8자리 이상 입력해주세요"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/completeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="완료"
+        android:background="#1CB0D3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+
+
 
 
 </LinearLayout>
